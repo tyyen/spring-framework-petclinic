@@ -27,8 +27,8 @@ stages:
   - job: MavenPackageAndPublishArtifacts
     displayName: Maven Package and Publish Artifacts
     pool:
-      name: 'Default'
-      # vmImage: $(vmImageName)
+      # name: 'Default'
+      vmImage: $(vmImageName)
 
     steps:
     - task: Maven@3
